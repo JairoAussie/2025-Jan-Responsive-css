@@ -1,0 +1,23 @@
+.parent {
+    height: 15vh;
+    width: 50vw;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.child {
+    height: 50%;
+    background-color: blue;
+    width: 50%;
+}
+
+.sofa-image {
+    /* min-width: 300px;
+    width: 50%;
+    max-width: 450px; */
+    /* width: max(300px, 50%);
+    max-width: 450px; */
+    /* width: min(450px, 50%);
+    min-width: 300px; */
+    width: clamp(300px, 50%, 450px);
+}
